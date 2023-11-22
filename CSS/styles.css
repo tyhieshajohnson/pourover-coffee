@@ -27,3 +27,57 @@
 }
 
 /* Navigation Bar - Media Queries */
+/* Landing Image */
+.btnCity {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background-color: white;
+  }
+/* Landing Page - Headings, Subheadings */
+.landingHead {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.landingSub {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.firstIcedTea {
+    position: absolute;
+    top: 210%;
+    left: 17%;
+}
+
+.secondIcedTea {
+    position: absolute;
+    top: 210%;
+    left: 44%;
+}
+
+.thirdIcedTea {
+    position: absolute;
+    top: 210%;
+    left: 73%;
+}
+/* Landing Page - Buttons */
+.btnIcedTea {
+    width: 100px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background-color: white;
+}
