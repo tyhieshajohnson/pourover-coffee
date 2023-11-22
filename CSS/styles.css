@@ -1,0 +1,29 @@
+/* Navigation Bar */
+.navbar {
+    position: sticky;
+}
+
+.navLogo {
+    width: 235px;
+    height: 72px;
+    flex-shrink: 0;
+    border-radius: 7px;
+}
+
+.btnNavShop {
+    width: 170px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.btnNavAbout {
+    width: 170px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background-color: white;
+}
+
+/* Navigation Bar - Media Queries */
