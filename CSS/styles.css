@@ -81,3 +81,30 @@
     border-radius: 7px;
     background-color: white;
 }
+
+/* Shop Page */
+.shopHead {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-decoration: underline;
+}
+
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .grid-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+        }
