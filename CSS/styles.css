@@ -4,23 +4,23 @@
 }
 
 .navLogo {
-    width: 235px;
-    height: 72px;
+    width: 150px;
+    height: 40px;
     flex-shrink: 0;
     border-radius: 7px;
 }
 
 .btnNavShop {
-    width: 170px;
-    height: 56px;
+    width: 90px;
+    height: 25px;
     flex-shrink: 0;
     border-radius: 7px;
     background-color: white;
 }
 
 .btnNavAbout {
-    width: 170px;
-    height: 56px;
+    width: 90px;
+    height: 25px;
     flex-shrink: 0;
     border-radius: 7px;
     background-color: white;
@@ -56,6 +56,8 @@
     color: white;
 }
 
+/* Iced Tea Home Page */
+
 .firstIcedTea {
     position: absolute;
     top: 215%;
@@ -84,7 +86,7 @@
 
 /* Shop Page */
 .shopHead {
-    margin-top: 10%;
+    margin-top: 7%;
     margin-bottom: 5%;
 }
 
@@ -112,3 +114,74 @@ body {
             background-color: #fff;
         }
 /* Create a hover for the shop images */
+/* Product Edit */
+.shopProducts {
+    background-image: url('https://i.postimg.cc/FRptcn6r/2.png');
+}
+
+/* Product Images */
+
+.imgProduct1 {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgProduct2 {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgProduct3 {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgProduct4 {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgProduct5 {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgProduct6 {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgProduct6 {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgProduct7 {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgProduct8 {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgProduct9 {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgProduct10 {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgProduct11 {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgProduct12 {
+    max-width: 100%;
+    height: auto;
+}
