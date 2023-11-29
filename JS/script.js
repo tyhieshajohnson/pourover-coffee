@@ -36,3 +36,50 @@ products.forEach(product => {
 });
 
 // Cart Page
+// Function to create a cart item element
+function createCartItemElement(product) {
+    const template = document.getElementById("cartItemTemplate");
+    const cartItemElement = document.importNode(template.content, true);
+
+    cartItemElement.querySelector("h3").textContent = product.name;
+    cartItemElement.querySelector(".cartProductImage").src = product.imageSrc;
+    cartItemElement.querySelector(".cartProductDescription").textContent = product.description;
+    cartItemElement.querySelector(".cartProductPrice").textContent = product.price;
+
+    return cartItemElement;
+}
+
+// Function to add a product to the cart and store it in localStorage
+function addToCart(product) {
+    const cartItems = document.getElementById("cartItems");
+    const cartItemElement = createCartItemElement(product);
+    cartItems.appendChild(cartItemElement);
+
+    // Retrieve existing cart items from localStorage or initialize an empty array
+    const existingCartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+    // Add the new item to the array
+    existingCartItems.push(product);
+
+    // Save the updated array back to localStorage
+    localStorage.setItem("cartItems", JSON.stringify(existingCartItems));
+}
+
+// Event listener for Add to Cart buttons
+const addToCartButtons = document.querySelectorAll('.grid-item button');
+addToCartButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        addToCart(products[index]);
+    });
+});
+
+// Load cart items from localStorage on page load
+window.addEventListener('load', () => {
+    const existingCartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+    const cartItems = document.getElementById("cartItems");
+    existingCartItems.forEach(item => {
+        const cartItemElement = createCartItemElement(item);
+        cartItems.appendChild(cartItemElement);
+    });
+});

@@ -190,3 +190,8 @@ body {
 .dropdownLogo {
     width: 300px;
 }
+
+.cartHead {
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
