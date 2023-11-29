@@ -34,3 +34,5 @@ products.forEach(product => {
     const productElement = createProductElement(product);
     shopProducts.appendChild(productElement);
 });
+
+// Cart Page
