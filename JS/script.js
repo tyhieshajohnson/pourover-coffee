@@ -1,18 +1,64 @@
 // Product Page
 // Product Page
 const products = [
-    { name: "Product 1", imageSrc: "https://i.postimg.cc/Dfg46tYq/iced-tea-3.png", description: "Description of Product 1.", price: "R19.99" },
-    { name: "Product 2", imageSrc: "https://i.postimg.cc/CxQc1vyq/4.png", description: "Description of Product 2.", price: "R24.99" },
-    { name: "Product 3", imageSrc: "https://i.postimg.cc/SN59YHsk/5.png", description: "Description of Product 3.", price: "R29.99" },
-    { name: "Product 4", imageSrc: "https://i.postimg.cc/vZkCj8Zk/6.png", description: "Description of Product 4.", price: "R14.99" },
-    { name: "Product 5", imageSrc: "https://i.postimg.cc/vZkCj8Zk/6.png", description: "Description of Product 4.", price: "R14.99" },
-    { name: "Product 6", imageSrc: "https://i.postimg.cc/SN59YHsk/5.png", description: "Description of Product 4.", price: "R14.99" },
-    { name: "Product 7", imageSrc: "https://i.postimg.cc/Dfg46tYq/iced-tea-3.png", description: "Description of Product 4.", price: "R14.99" },
-    { name: "Product 8", imageSrc: "https://i.postimg.cc/CxQc1vyq/4.png", description: "Description of Product 4.", price: "R14.99" },
-    { name: "Product 9", imageSrc: "https://i.postimg.cc/CxQc1vyq/4.png", description: "Description of Product 4.", price: "R14.99" },
-    { name: "Product 10", imageSrc: "https://i.postimg.cc/Dfg46tYq/iced-tea-3.png", description: "Description of Product 4.", price: "R14.99" },
-    { name: "Product 11", imageSrc: "https://i.postimg.cc/vZkCj8Zk/6.png", description: "Description of Product 4.", price: "R14.99" },
-    { name: "Product 12", imageSrc: "https://i.postimg.cc/SN59YHsk/5.png", description: "Description of Product 4.", price: "$14.99" }
+    { name: "Product 1", 
+    imageSrc: "https://i.postimg.cc/Dfg46tYq/iced-tea-3.png", 
+    description: "Description of Product 1.", 
+    price: "R19.99" },
+    // product2
+    { name: "Product 2", 
+    imageSrc: "https://i.postimg.cc/CxQc1vyq/4.png", 
+    description: "Description of Product 2.", 
+    price: "R24.99" },
+    // product3
+    { name: "Product 3", 
+    imageSrc: "https://i.postimg.cc/SN59YHsk/5.png", 
+    description: "Description of Product 3.", 
+    price: "R29.99" },
+    { name: "Product 4", 
+    imageSrc: "https://i.postimg.cc/vZkCj8Zk/6.png", 
+    description: "Description of Product 4.", 
+    price: "R14.99" },
+    // product4
+    { name: "Product 5", 
+    imageSrc: "https://i.postimg.cc/vZkCj8Zk/6.png", 
+    description: "Description of Product 4.", 
+    price: "R14.99" },
+    // product6
+    { name: "Product 6", 
+    imageSrc: "https://i.postimg.cc/SN59YHsk/5.png", 
+    description: "Description of Product 4.", 
+    price: "R14.99" },
+    // product7
+    { name: "Product 7", 
+    imageSrc: "https://i.postimg.cc/Dfg46tYq/iced-tea-3.png", 
+    description: "Description of Product 4.", 
+    price: "R14.99" },
+    // product8
+    { name: "Product 8", 
+    imageSrc: "https://i.postimg.cc/CxQc1vyq/4.png", 
+    description: "Description of Product 4.", 
+    price: "R14.99" },
+    // product9
+    { name: "Product 9", 
+    imageSrc: "https://i.postimg.cc/CxQc1vyq/4.png", 
+    description: "Description of Product 4.", 
+    price: "R14.99" },
+    // product10
+    { name: "Product 10", 
+    imageSrc: "https://i.postimg.cc/Dfg46tYq/iced-tea-3.png", 
+    description: "Description of Product 4.", 
+    price: "R14.99" },
+    // product11
+    { name: "Product 11", 
+    imageSrc: "https://i.postimg.cc/vZkCj8Zk/6.png", 
+    description: "Description of Product 4.", 
+    price: "R14.99" },
+    // product12
+    { name: "Product 12", 
+    imageSrc: "https://i.postimg.cc/SN59YHsk/5.png", 
+    description: "Description of Product 4.", 
+    price: "$14.99" }
 ];
 
 // Function to create a product element
