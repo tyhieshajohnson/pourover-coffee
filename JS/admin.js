@@ -84,7 +84,7 @@ table.addEventListener('click', function(){
 });
 table.innerHTML = products.join('');
 };
-// Zubaidah
+
 function favourite(){
 localStorage.setItem('items',JSON.stringify(items));
 //sets the array from local storage array(items)in code
