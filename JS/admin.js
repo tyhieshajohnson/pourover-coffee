@@ -37,6 +37,8 @@ items = JSON.parse(localStorage.getItem('items'));
 
 // use queryselector to display the information
 let table = document.querySelector('table');
+window.onload = function anything(){
+
 // looping through every object in the array (.map)
 // returning items and the index of the object
 let products = items.map(function(item, index) {
@@ -63,11 +65,15 @@ table.style.backgroundColor = 'grey';
 table.style.textDecorationColor = 'white';
 
 // 
-let deleteButton = document.querySelector('.delete');
 function remove(position){
     // alert('Button Clicked1')
     items.splice(position, 1);
+    favourite()
+    anything()
+    
 };
+
+let deleteButton = document.querySelector('.delete');
 table.addEventListener('click', function(){
     // using a conditional statement by declaring the button that is clicked
     if (event.target.classList.contains('delete')){
@@ -75,4 +81,12 @@ table.addEventListener('click', function(){
         // alert('event.targer.value)');
         remove(event.target.value)
     }
-})
+});
+table.innerHTML = products.join('');
+};
+// Zubaidah
+function favourite(){
+localStorage.setItem('items',JSON.stringify(items));
+//sets the array from local storage array(items)in code
+items = JSON.parse(localStorage.getItem('items'));
+}
