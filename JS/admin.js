@@ -30,3 +30,21 @@ items.push(object1, item2);
 localStorage.setItem('items',JSON.stringify(items));
 
 // the reason for this is to add or reload the object in the localStorage
+
+// sets the array from local storage to to array (item) in code
+items = JSON.parse(localStorage.getItem('items'));
+
+// use queryselector to display the information
+let table = document.querySelector('table');
+// looping through every object in the array (.map)
+// returning items and the index of the object
+let products = items.map(function(item, index) {
+    console.log(item);
+    console.log(index);
+    return `
+    <tr>
+    <td>${item.name}</td>
+</tr
+`
+})
+table.innerHTML = products;
