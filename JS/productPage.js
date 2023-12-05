@@ -12,12 +12,12 @@ main.innerHTML = items.map(function(item, index) {
         </div>
         `
 }).join('');
-// function add(index) {
-//     purchased.push(items[index]);
-//     localStorage.setItem('items', JSON.stringify(purchased));
-// }
-// main.addEventListener('click', function(event) {
-//     if (event.target.hasAttribute('data-add')) {
-//         add(event.target.value);
-//     }
-// });
+function add(index) {
+    purchased.push(items[index]);
+    localStorage.setItem('items', JSON.stringify(purchased));
+}
+main.addEventListener('click', function(event) {
+    if (event.target.hasAttribute('data-add')) {
+        add(event.target.value);
+    }
+});
